@@ -3,6 +3,7 @@
 Bienvenidos al repositorio del grupo 6.
 
 Proyecto: Analizando señales de EMG  
+Queremos trabajar en la adquisición de señales EMG, ya que es una herramienta valiosa en el diagnóstico y seguimiento de diversas enfermedades y trastornos neuromusculares como la distrofia muscular
 
 ## Integrantes 
 
