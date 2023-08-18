@@ -6,8 +6,8 @@ Proyecto: Analizando señales de EMG
 
 ## Integrantes 
 
-- Lucero Gómez - 70669873
-- Angie Nuñez - 73202687
+- Lucero Gómez - 70669873: Estudiando de Ingeniería Biomédica del noveno ciclo, interesada en la rama de Ingeniera Clínica y Señales e Imágenes Biomédicas.
+- Angie Nuñez - 73202687: Estudiando de Ingeniería Biomédica del noveno ciclo, interesada en la rama de Ingeniera Clínica y ingeniería de Tejidos.
 - Victor Rivas - 71474515: Estudiante de ingeniería biomédica de décimo ciclo que quiere especializarse en ingeniería clínica y ingeniería de tejidos.
 - Francisco Ruiz - AY853936: Estudiante de ingeniería biomédica interesado en la ciencia de datos, procesamiento de imagenes y programación backend.
 
@@ -16,8 +16,11 @@ Proyecto: Analizando señales de EMG
 ## Tabla de contenidos
 
 - [Introducción ](Documentacion/Index)
-- Objetivos
-- Materiales
-- Metodología 
-- Docentes 
+- [Objetivos ](Documentacion/objetivos.txt)
+- [metodología ](Documentacion/metodologia.txt)
+- [materiales ](Documentacion/materiales.txt)
+- [Docentes ](Documentacion/metodologia.txt)
+
+
+
 
