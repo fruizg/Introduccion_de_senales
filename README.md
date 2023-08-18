@@ -16,7 +16,7 @@ Queremos trabajar en la adquisición de señales EMG, ya que es una herramienta 
 
 ## Tabla de contenidos
 
-- [Introducción ](Documentacion/Index)
+- [Introducción ](Documentacion/Index.txt)
 - [Objetivos ](Documentacion/objetivos.txt)
 - [metodología ](Documentacion/metodologia.txt)
 - [materiales ](Documentacion/materiales.txt)
