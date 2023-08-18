@@ -15,3 +15,9 @@ Proyecto:
 
 ## Tabla de contenidos
 
+- Introducción
+- Objetivos
+- Materiales
+- Metodología 
+- Docentes 
+
