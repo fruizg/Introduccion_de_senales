@@ -12,12 +12,20 @@ Las diversas fuentes de interferencias electromagnéticas presentes en el labora
 
 5. Cables de Alimentación y de Señal: Si los cables de alimentación y de señal del Arduino no están correctamente apantallados, pueden actuar como antenas y captar interferencias electromagnéticas del entorno.
 
-- [Señal sinusoidal - Osciloscopio](../../img/Senalcuadrada_osci.jpg)
-- [Señal sinusoidal - Arduino](../../img/Senalcuadrada_ardu.jpg.)
+![Señal cuadrada - Osciloscopio](../../img/Senalcuadrada_osci.jpg)
+![Señal cuadrada - Arduino](../../img/Senalcuadrada_ardu.jpg)
 
 
+## Señal sinusoidad
+
+![Señal sinusoidal - Osciloscopio](../../img/SenalSinusoidad_osci.jpg)
+![Señal sinusoidal - Arduino](../../img/SenalSinusoidal_ardu.jpg)
 
 
+## Señal Rampa
+
+![Señal rampa - Osciloscopio](../../img/Rampa_osci.jpg)
+![Señal rampa - Arduino](../../img/Rampa_ardu.jpg)
 ## Referencias
 
 [1]
