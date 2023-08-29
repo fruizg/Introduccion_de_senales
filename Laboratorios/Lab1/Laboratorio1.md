@@ -1,4 +1,4 @@
-## Señal cuadrada
+## Diferencias entre la señal del osciloscopio y el arduino
 
 Las diversas fuentes de interferencias electromagnéticas presentes en el laboratorio pueden ser responsables de la degradación de la señal obtenida desde el Arduino. Algunas de las fuentes posibles de EMI y cómo afectan la señal pueden ser las siguientes [1]:
 
@@ -11,6 +11,12 @@ Las diversas fuentes de interferencias electromagnéticas presentes en el labora
 4. Leds y Luces Fluorescentes: Las luces LED y fluorescentes también pueden generar ruido electromagnético debido a la modulación de la corriente que alimenta las lámparas.
 
 5. Cables de Alimentación y de Señal: Si los cables de alimentación y de señal del Arduino no están correctamente apantallados, pueden actuar como antenas y captar interferencias electromagnéticas del entorno.
+
+6. Para leer una señal analógica, el Arduino utiliza un conversor analógico-digital (ADC) que tiene una frecuencia de muestreo máxima de unos 10 kHz. Esto significa que el Arduino puede tomar 10.000 muestras por segundo de una señal analógica.
+Un osciloscopio puede tener una frecuencia de muestreo mucho mayor que un Arduino, dependiendo del modelo y la configuración. Por ejemplo, un osciloscopio digital puede tener una frecuencia de muestreo de hasta varios GHz2, lo que significa que puede tomar miles de millones de muestras por segundo de una señal analógica.
+Por lo tanto, si se toma una imagen de una señal analógica con un Arduino y otra con un osciloscopio, se pueden distinguir por la frecuencia de muestreo. La imagen del Arduino tendrá menos puntos y más espacios entre ellos, lo que implica una menor resolución y precisión, la imagen capturada por el Arduino podría parecer distorsionada o incluso incorrecta debido a la incapacidad de capturar con precisión la forma de onda de alta frecuencia. La imagen del osciloscopio tendrá más puntos y menos espacios entre ellos, lo que implica una mayor resolución y precisión.
+
+## Señal cuadrada
 
 ![Señal cuadrada - Osciloscopio](../../img/Senalcuadrada_osci.jpg)
 ![Señal cuadrada - Arduino](../../img/Senalcuadrada_ardu.jpg)
