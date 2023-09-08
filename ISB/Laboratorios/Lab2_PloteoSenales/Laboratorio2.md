@@ -20,20 +20,25 @@ Por lo tanto, si se toma una imagen de una señal analógica con un Arduino y ot
 
 ## Señal cuadrada
 
-![Señal cuadrada - Osciloscopio](../../img/Senalcuadrada_osci.jpg)
-![Señal cuadrada - Arduino](../../img/Senalcuadrada_ardu.jpg)
+| ARDUINO             | OSCILOSCOPIO                                              |
+| ----------------- | ------------------------------------------------------------------ |
+| <p align="justify"> <img src="img/Senalcuadrada_ardu.jpg" height="300"> | <img src="img/Senalcuadrada_osci.jpg" height="300" width = "200">
+
 
 
 ## Señal sinusoidad
 
-![Señal sinusoidal - Osciloscopio](../../img/SenalSinusoidad_osci.jpg)
-![Señal sinusoidal - Arduino](../../img/SenalSinusoidal_ardu.jpg)
+| ARDUINO             | OSCILOSCOPIO                                              |
+| ----------------- | ------------------------------------------------------------------ |
+| <p align="justify"> <img src="img/SenalSinusoidal_ardu.jpg" height="300"> | <img src="img/SenalSinusoidad_osci.jpg" height="300" width = "200">
 
 
 ## Señal Rampa
 
-![Señal rampa - Osciloscopio](../../img/Rampa_osci.jpg)
-![Señal rampa - Arduino](../../img/Rampa_ardu.jpg)
+| ARDUINO             | OSCILOSCOPIO                                              |
+| ----------------- | ------------------------------------------------------------------ |
+| <p align="justify"> <img src="img/Rampa_ardu.jpg" height="300"> | <img src="img/Rampa_osci.jpg" height="300" width = "200">
+
 
 ## Referencias
 
