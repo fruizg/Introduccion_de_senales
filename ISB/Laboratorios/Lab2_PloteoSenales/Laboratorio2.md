@@ -22,7 +22,7 @@ Por lo tanto, si se toma una imagen de una señal analógica con un Arduino y ot
 
 | ARDUINO             | OSCILOSCOPIO                                              |
 | ----------------- | ------------------------------------------------------------------ |
-| <p align="justify"> <img src="img/Senalcuadrada_ardu.jpg" height="300"> | <img src="img/Senalcuadrada_osci.jpg" height="300" width = "200">
+| <p align="justify"> <img src="img/Senalcuadrada_ardu.jpg" height="300"> | <img src="img/Senalcuadrada_osci.jpg" height="300">
 
 
 
@@ -30,14 +30,14 @@ Por lo tanto, si se toma una imagen de una señal analógica con un Arduino y ot
 
 | ARDUINO             | OSCILOSCOPIO                                              |
 | ----------------- | ------------------------------------------------------------------ |
-| <p align="justify"> <img src="img/SenalSinusoidal_ardu.jpg" height="300"> | <img src="img/SenalSinusoidad_osci.jpg" height="300" width = "200">
+| <p align="justify"> <img src="img/SenalSinusoidal_ardu.jpg" height="300"> | <img src="img/SenalSinusoidad_osci.jpg" height="300">
 
 
 ## Señal Rampa
 
 | ARDUINO             | OSCILOSCOPIO                                              |
 | ----------------- | ------------------------------------------------------------------ |
-| <p align="justify"> <img src="img/Rampa_ardu.jpg" height="300"> | <img src="img/Rampa_osci.jpg" height="300" width = "200">
+| <p align="justify"> <img src="img/Rampa_ardu.jpg" height="300"> | <img src="img/Rampa_osci.jpg" height="300">
 
 
 ## Referencias
