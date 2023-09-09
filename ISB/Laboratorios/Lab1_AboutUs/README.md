@@ -11,7 +11,7 @@ Somos un grupo de estudiantes de ingeniería biomédica, el cual comparte una pr
 - Victor Rivas - 71474515: Estudiante de ingeniería biomédica de décimo ciclo que quiere especializarse en ingeniería clínica y ingeniería de tejidos.
 - Francisco Ruiz - AY853936: Estudiante de ingeniería biomédica interesado en la ciencia de datos, procesamiento de imagenes, programación backend e ingeniería clínica
 
-![Foto integrantes del grupo 6](img/integrantes.jpg)
+![Foto integrantes del grupo 6](integrantes.jpg)
 
 
 
