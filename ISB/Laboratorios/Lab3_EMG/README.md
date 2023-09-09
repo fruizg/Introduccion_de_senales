@@ -12,10 +12,6 @@ Existen dos métodos principales para obtener señales de EMG: la medición desd
 
 ## videos de funcionamiento
 ### Video biceps
-[Video biceps 2](Img_videos/VideoBiceps2.mp4) {height=250}
-
-[Video Flexor 2](Img_videos/VideoFlexor2.mp4) {height=250}
-
 
 
 
