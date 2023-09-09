@@ -16,11 +16,6 @@ Existen dos métodos principales para obtener señales de EMG: la medición desd
 [Video Biceps reposo y carga mecánica](https://github.com/fruizg/Introduccion_de_senales/assets/142452596/75fbba4d-9ba5-41b2-9e4f-15cb34632860)
 
 
-
-[Video Flexor del pulgar reposo y carga mecánica](https://github.com/fruizg/Introduccion_de_senales/assets/142452596/444b03ba-27e0-4828-bdd9-c9198fdf4d59)
-
-
-
 ### Video flexor
 
 ## Resumen y explicación señal ploteada
