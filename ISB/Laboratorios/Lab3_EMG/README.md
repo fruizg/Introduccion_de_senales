@@ -12,23 +12,14 @@ Existen dos métodos principales para obtener señales de EMG: la medición desd
 
 ## videos de funcionamiento
 ### Video biceps
-<div>
-<p style = 'text-align:center;'>
-<iframe width="50%" height = "420"
-src="Img_videos/VideoBiceps1.mp4">
-</iframe>
-</div>
-</p>
+[Video biceps 2](Img_videos/VideoBiceps2.mp4) {height=250}
+
+[Video Flexor 2](Img_videos/VideoFlexor2.mp4) {height=250}
+
+
 
 
 ### Video flexor
-<div>
-<p style = 'text-align:center;'>
-<iframe width="50%" height = "420"
-src="Img_videos/VideoFlexor2.mp4">
-</iframe>
-</div>
-</p>
 
 ## Resumen y explicación señal ploteada
 
@@ -43,7 +34,7 @@ Por otro lado, una segunda medición se llevó a cabo posicionando los electrodo
 * [NoteBook ploteo](Lecturaseñal1.ipynb) 
 ### Ploteo en Python
 ##### Gráfica Biceps Crudo
-<img src="Img_videos/SeñalVictor_Biceps.png" height="300">
+<img src="Img_videos/SenalVictor_Biceps.png" height="300">
 
 #### Reposo, fase activa y potencial de acción
 
