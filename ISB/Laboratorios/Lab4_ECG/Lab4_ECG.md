@@ -87,14 +87,14 @@ Las imágenes son consistentes con la teoría, las bajas frecuencias son dominan
 
 ##### Sujeto 1
 
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/0e924114-f470-4f22-be13-9bd9091df8f8
 
-
-https://github.com/fruizg/Introduccion_de_senales/assets/142452596/625115f0-07c4-47e1-bddd-140ee4ec5b93
 
 ##### Sujeto 2
 
 
-https://github.com/fruizg/Introduccion_de_senales/assets/142452596/a36fbfce-8794-49b8-b3f3-1b4ff1d4cd55
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/59177078-1aa7-40b4-b1aa-ba847f332dee
+
 
 #### Videos de la toma del ECG
 
