@@ -19,6 +19,7 @@ En el contexto peruano, las enfermedades cardiovasculares se han convertido en u
 | Electrodos desechables adhesivos gelificados | 2230 RED DOT marca 3M | 3 | 
 | Software | OpenSignals | 1 |
 | Crónometro | - | 1 | 
+|ProSim | ProSim 4 | 1|
 
 #### Metódos
 
@@ -45,7 +46,63 @@ Inmediatamente después de la culminación del ejercicio vigoroso realizado por 
 
 |Sujeto 1 | Sujeto 2 |
 |---|---|
-| ![](Img_videosECG/ConexionBITalino_Sujeto1.jpg)|![](Img_videosECG/) | 
+| ![](Img_videosECG/ConexionBITalino_Sujeto1.jpg)|![](Img_videosECG/ECG_Sujeto2.jpg) | 
+
+#### Gráficas en reposo OpenSignals
+
+|Sujeto 1 | Sujeto 2 |
+|---|---|
+| ![](Img_videosECG/ECG_Reposo_Sujeto1.jpg)|![](Img_videosECG/ECG_Reposo_Sujeto2.jpg) | 
+
+Aquí se pueden visualizar ciertas diferencias entre los sujetos. En el segundo se puede observar mayor ruido en la señal, mayor amplitud en la onda S y una onda T más ancha y también con mayor amplitud. En el apartado de discusión se abordarán las posibles causas de lo anteriormente descrito.
+
+#### Gráficas comparando reposo y actividad física
+
+|Sujeto 1 | Sujeto 2 |
+|---|---|
+| ![](Img_videosECG/ECG_Sujeto1_comparison.png)|![](Img_videosECG/ECG_Sujeto2_comparison.png) | 
+
+De acuerdo con el algoritmo creado, la frecuencia cardiaca del sujeto 1 en reposo fue de 62 lpm y, luego de realizar actividad física, fue de 118 lpm.
+
+Por su parte, la frecuencia cardiaca del sujeto 2 en reposo fue de 83 y, luego de la actividad física fue de 149. En el sujeto 2 después de la realización de la actividad física, se aprecia que la onda T tiene mayor amplitud que el mismo complejo QRS.
+
+#### Gráficas arrojadas por PromSim 
+
+![](Img_videosECG/ECG_Prosim_comparison.png)
+
+En la imagen anterior se observa 4 diferentes ritmos cardiacos arrojados por el dispositivo ProSim, el cual simula ECG. 
+
+La gráfica de la sección superior izquierda corresponde a un ritmo normal de 150 lpm. El que le sigue a la derecha es un ritmo normal también pero que sus lpm corresponden a 180. Por su parte, los 2 ritmos de la sección inferior corresponden a ritmos de paro, más especificamente a taquicardia ventricular y fibrilación ventricular. 
+
+![g](Img_videosECG/RitmosAnormalesECG.png) [g]
+
+#### Análisis espectral de las señales
+
+|FFT Sujeto 1 | FFT Sujeto 2 | FFT ProSim|
+|---|---|---|
+| ![](Img_videosECG/FFT_Sujeto1.png)|![](Img_videosECG/FFT_Sujeto2.png) | ![](Img_videosECG/FFT_ProSim.png)
+
+Las imágenes son consistentes con la teoría, las bajas frecuencias son dominantes en la toma de ECG. Asímismo, se evidencian algunas frecuencias que podrían corresponder a artefactos o ruidos, tales como la que corresponde a 60 Hz (de la fuente de alimentación), 2.4 Hz (interferencia electromagnética por dispositivos móviles que utilicen WiFi o Bluetooth). Las frecuencias más altas podrían estar relacionas con actividad muscular superficial (EMG).
+#### Videos de la actividad Física
+
+#### Videos de la toma del ECG
+
+#### Videos ProSim
+
+### Discusión
+
+•	Para la toma de datos con el BITalino se debe establecer un protocolo cuando la toma de datos sea con actividad física y sin, para poder obtener datos que se puedan analizar.
+
+•	Se identifica que la onda S se destaca más en la segunda toma del sujeto 2, lo cual resalta la importancia de comprender cómo ciertos factores, como la ubicación incorrecta de los electrodos o una conexión deficiente entre los electrodos y la piel, pueden resultar en una apariencia inusual en el registro del BITalino. La ubicación de los electrodos en el cuerpo puede impactar en la amplitud de las ondas en el ECG, especialmente si se orientan de manera que registren el flujo de corriente eléctrica en una dirección específica. Además, se debe considerar cómo la anatomía del corazón, las condiciones cardíacas, la edad y el género pueden influir en las mediciones obtenidas, pero no se puede llegar a un diagnóstico con la toma del BITalino. Si se analiza el tema fisiológico, se debe considerar que la onda S es más prominente en un electrocardiograma (ECG) cuando hay una hipertrofia ventricular izquierda (HVI) o un bloqueo de rama derecha (BRD). Estas condiciones hacen que la despolarización del ventrículo izquierdo se retrase y se prolongue, lo que produce una onda S más profunda y ancha en las derivaciones precordiales derechas (V1-V2) y en las derivaciones periféricas izquierdas (I, aVL) [H][I]. En resumen, en este caso no se puede llegar a una conclusión definitiva, ya que mientras un ECG tradicional se especializa en la medición precisa de señales cardíacas, el BITalino es una plataforma más versátil que puede capturar señales cardíacas, aunque su enfoque principal es brindar flexibilidad para diversas aplicaciones de adquisición de señales fisiológicas.
+
+Recomendaciones: 
+
+•	Respecto a la toma de datos con el BITalino se debe considerar la idoneidad de la tecnología para el propósito específico. Si la precisión es de suma importancia, como en el diagnóstico de afecciones cardíacas críticas, un ECG tradicional podría ser la mejor opción. Sin embargo, si se necesita flexibilidad en la adquisición de señales para aplicaciones más diversas, BITalino puede ser adecuado.
+
+•	Se debe verificar bien la ubicación de electrodos, además que cuando se haga la toma no haya interferencias ya que la señal se puede alterar. 
+
+•	Si bien el BITalino aplica filtros específicos para cada una de las señales, se debe filtrar aún más la señal para obtener mejores resultados. Se podrían aplicar algunas técnicas de filtros digitales como FIR e IIR. 
+
 
 #### Referencias
 
@@ -67,5 +124,13 @@ López Núñez, Álvaro, Monroy M, Molinares C. EFECTOS DEL USO DE ESCALERAS EN 
 [f]
 Valentino SE, Dunford EC, Dubberley J, Lonn E, Gibala MJ, Phillips SM, et al. Cardiovascular responses to high‐intensity stair climbing in individuals with coronary artery disease. Physiological Reports [Internet]. 2022 May 1 [cited 2023 Sep 17];10(10). Available from: https://physoc.onlinelibrary.wiley.com/doi/full/10.14814/phy2.15308
 
+[g]
+Bryan Derrickson Gerard J. Tortora, Principios de Anatomía y Fisiología. Ed. Medica Panam., 2018.
+
+[H]
+Universidad Autónoma de México. FUNDAMENTOS ELECTROFISIOLÓGICOS DEL ELECTROCARDIOGRAMA. Unidad temática II.
+
+[I]
+Biopac Student Lab. Lección 6. ELECTROCARDIOGRAFÍA (ECG) II. 
 
 
