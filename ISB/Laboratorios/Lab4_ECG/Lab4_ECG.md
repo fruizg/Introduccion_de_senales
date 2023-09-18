@@ -85,9 +85,36 @@ La gráfica de la sección superior izquierda corresponde a un ritmo normal de 1
 Las imágenes son consistentes con la teoría, las bajas frecuencias son dominantes en la toma de ECG. Asímismo, se evidencian algunas frecuencias que podrían corresponder a artefactos o ruidos, tales como la que corresponde a 60 Hz (de la fuente de alimentación), 2.4 Hz (interferencia electromagnética por dispositivos móviles que utilicen WiFi o Bluetooth). Las frecuencias más altas podrían estar relacionas con actividad muscular superficial (EMG).
 #### Videos de la actividad Física
 
+##### Sujeto 1
+
+
+
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/625115f0-07c4-47e1-bddd-140ee4ec5b93
+
+##### Sujeto 2
+
+
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/a36fbfce-8794-49b8-b3f3-1b4ff1d4cd55
+
 #### Videos de la toma del ECG
 
+##### Sujeto 1
+
+
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/bd73a6bf-7043-42ce-8076-9b4162d9a5c1
+
+#### Sujeto 2
+
+
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/22558447-69d8-4dd6-b632-9ee29f13c25b
+
+
 #### Videos ProSim
+
+Se visualiza la captura de la señal arrojada por el Prosim
+
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/09ea4fb0-1cc1-4018-ab54-e796300efb32
+
 
 ### Discusión
 
