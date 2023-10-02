@@ -100,16 +100,18 @@ Posteriormente, se empleó el headset Ultracortex para la obtención de las señ
 
 ##### EEG BITalino Reposo
 
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/9315b84b-b2e3-4b5b-b4a4-31baeac97285
 
 
 ##### EEG BITalino - actividad mental
 
 
-
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/b0d7a6e7-4f4d-4cdc-b79d-c4a9b673131e
 
 
 #### EEG Ultracórtex
 
+https://github.com/fruizg/Introduccion_de_senales/assets/142452596/b3125229-ce49-45ba-bb3c-34b51db0dbbc
 
 
 ### Discusión
