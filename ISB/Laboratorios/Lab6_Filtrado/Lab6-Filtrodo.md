@@ -58,39 +58,135 @@ El objetivo de esta metodología es filtrar las frecuencias altas de las señale
 
 6. Implementación y validación:
    - Se implementaron los filtros diseñados en el procesamiento de las señales de ECG.
+   
+#### Obtención de la señal
+
+En primer lugar, se realizó el emparejamiento entre el módulo BITalino y la laptop vía Bluetooth. Luego, se preparó la piel adecuadamente antes de pegar los electrodos en ella. Para medir la actividad cerebral desde el cuero cabelludo, se empleó la técnica de configuración bipolar que consistía en dos electrodos de medición (IN + e IN-). Asimismo, fue necesario conectar un electrodo de referencia adicional y colocarlo en una zona ósea.
+
+| Referencia de posicionamiento de eléctrodos BITalino | Colocación electrodos en sujeto de prueba vista frontal | Colocación electrodos en sujeto de prueba vista lateral |
+|---|---|---|
+| ![](/ISB/Laboratorios/Lab5_EEG/Imagenes_videos_EEG/Referencia_electrodos.png) <p align="center"> Figura 1: posicionamiento electrodos [4].</p> | ![](/ISB/Laboratorios/Lab5_EEG/Imagenes_videos_EEG/SujetoPrueba.jpg)<p align="center"> Figura : Vista frontal </p>|![](/ISB/Laboratorios/Lab5_EEG/Imagenes_videos_EEG/Colocacion_Electrodos_BITalino.jpg) <p align="center"> Figura 3: Vista lateral</p>|
+
+Una vez iniciada la adquisición de señales a través del software OpenSignals, el sujeto de prueba debía suprimir cualquier activación muscular, especialmente en el área facial (movimientos oculares y parpadeos) y los movimientos del cuello y la mandíbula (apretar/masticar) [4]. Seguidamente se realizaron las siguientes preguntas a modo ejercicio mental:
+
+![](/ISB/Laboratorios/Lab5_EEG/Imagenes_videos_EEG/Preguntas_ref.png)
+
+<p align="center">
+ Tabla 1: Ejemplos de problemas planteados de lógica y matemáticas utilizados en el estudio [5].
+
+</p> 
 
 
+### Resultados
 
+#### Señal EEG
+Se presentan a continuación, los resultados obtenidos con la señal EEG.
+![](img_videos/SeñalEEG_cruda.png)
+
+<p align="center">
+ Figura 4: Señal EEG cruda
+
+</p> 
+
+Se presenta la señal de EEG sin la realización del preprocesamiento, en donde se representa la actividad eléctrica del cerebro durante un esfuerzo mental considerable (ver tabla 1).
+
+La señal EEG se ha preprocesado mediante una función que aplica un filtro pasabaja de 50Hz. Lo anterior teniendo en cuenta el desarrollo de laboratorios anteriores, en los cuales se desarrollan a profundidad los conceptos técnicos del EEG. 
+
+##### Filtrado de señal EEG
+
+![](img_videos/ComparisonEEG.png)
+
+<p align="center">
+ Figura 5: Comparación de los resultados de los filtros aplicados
+
+</p> 
+Para el diseño de tanto el filtro IIR como el FIR, se utilizaron filtros pasabajas con frecuencia de corte de 50 Hz.
+
+Para el filtro IIR, el orden para el filtro fue de 3. Se utilizó ese orden de acuerdo con la revista medium [6].
+
+Con respecto al filtro FIR, se utilizó la ventana hamming, con un orden de 127. Lo anterior de acuerdo con la teoría de diseño de filtros, donde para conocer el orden de un filtro pasabajas con una ventana hamming, se utiliza la ecuación M = 8/dw, donde dw es igual a la diferencia entre la frecuencia más baja y más de la banda de transición [7].
+
+El diseño de wavelet se realizó con una wavelet madre db4 de 10 niveles por recomemdación del profesor encargado.
+
+![](img_videos/EEG_FiltradoOndas.png)
+
+<p align="center">
+ Figura 6: Filtrado de las diferentes ondas
+
+</p> 
+
+Se aplicó un filtro IRR para el filtrado de las diferentes ondas cerebrales.Se visualiza mayor actividad de las ondas beta y gamma, lo cual tiene coherencia con la actividad mental que estaba realizando el sujeto a la hora de la adquisición de la señal.
+
+##### respuesta en frecuencia
+
+![](img_videos/FrecuenciasEEG.png)
+
+<p align="center">
+ Figura 7: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
+</p> 
+Se Visualiza en la figura que tanto los filtros FIR e IRR logran cortar las frecuencias bajas. Por su parte, el filtrado del wavelet solo logra suavizar o atenuar un poco el rudio. Para mayor eficiencia de esta última, se debería inestigar más acerca de los niveles de la wavelet o inclusive la misma wavelet madre.
+
+#### Señal EMG
+
+Se presentan a continuación, los resultados obtenidos con la señal EMG.
+![](img_videos/EMG_cruda.png)
+
+<p align="center">
+ Figura 8: Señal EMG cruda
+
+</p> 
+
+Se visualiza una señal de EMG donde tomada del bicep. Se logra apreciar la diferencia entre el estado en reposo y una contracción muscular aplicando la mayor fuerza posible mientras una persona externa realizaba una palanca.
+
+##### Filtrado de señal EMG
+
+![](img_videos/EMG_comparison.png)
+
+<p align="center">
+ Figura 9: Comparación de los resultados de los filtros aplicados
+
+</p> 
+
+Para el filtro IIR, el orden para el filtro fue de 6. Este orden fue utilizado de acuerdo al resultado dela libreria buttord. Además, se utilizóun filtro pasabandas entre 65-150 Hz. La literatura aborda frecuencias entre 50 o 60 hasta 150. Se utilizó 65 para eliminar el ruido de la alimentación.
+
+Con respecto al filtro FIR, se utilizó la ventana hamming, con un orden de 14. Lo anterior de acuerdo con la teoría de diseño de filtros, donde para conocer el orden de un filtro pasabajas con una ventana hamming, se utiliza la ecuación M = 8/dw, donde dw es igual a la diferencia entre la frecuencia más baja y más de la banda de transición [7].
+
+Para el diseño de wavelet, se utilizaron 4 niveles y una wavelet madre db6. 
+
+##### Respuesta en frecuencia 
+
+![](img_videos/EMG_respuestaFreq.png)
+
+<p align="center">
+ Figura 7: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
+</p> 
+
+Se visualiza que todos los filtros logran atenuar con creces el ruido que si se visualiza en la señal cruda
 ### Discusión
 
-- Respecto a la señal Delta en reposo podemos observar que cuenta con una amplitud más grande y una frecuencia más pequeña respecto a la señal delta después del ejercicio mental. Esta observación de una amplitud más grande y una frecuencia más pequeña en las ondas delta después del ejercicio mental sugiere que el cerebro está experimentando cambios en su actividad eléctrica en respuesta a la tarea cognitiva realizada.[7,8] Estos cambios pueden estar relacionados con la activación, la sincronización neuronal, la fatiga o el estado de relajación posterior al ejercicio mental.
+- Los resultados del filtrado de ecg no fueron tan buenos comparados con EEG y EMG. Se tendría que aplicar los filtros bajo el desarrollo de las mismas funciones.
 
-- La señal Gamma tiene mayor actividad, mayor amplitud y mayor frecuencia en reposo respecto a la señal obtenida después del ejercicio mental. Este cambio refleja la dinámica de la actividad cerebral en respuesta a la tarea cognitiva realizada. Esta diferencia puede estar relacionada con la modulación de redes neuronales, la sincronización neuronal, la intensidad de la tarea, la fatiga cerebral y los cambios en el estado de alerta, entre otros factores.[8]
+- En relación al código empleado en el procesamiento de las señales de electrocardiograma (ECG), se enfrentaron dificultades con el filtro IIR. A pesar de que se logró realizar una reducción, ésta no se consideró sustancial en términos de mejora de la señal.
 
-- La señal Alpha y Beta tienen mayor amplitud durante el reposo; mientras que después del ejercicio mental tienen menos amplitud.Esto puede estar relacionado con cambios en la atención, la sincronización neuronal, la inhibición cortical, la activación de otras frecuencias y la fatiga cerebral.[8]
+- En el caso del filtro FIR, se observó una notable disminución del ruido en las señales de ECG, aunque esta reducción fue tan significativa que llegó a afectar las características esenciales de dichas señales.
 
-- La señal Theta en ambas pruebas son parecidas. 
-Las señales EEG son muy sensibles y pueden ser afectadas por la interferencia electromagnética, como la generada por otros dispositivos electrónicos cercanos. Esto podría provocar ruido en las señales EEG y afectar la calidad de los datos recopilados.
+ - Con respecto al método de procesamiento de señales utilizando Wavelet, se encontraron resultados similares a los obtenidos con el filtro FIR, es decir, se produjo una considerable pérdida de información en las señales de ECG. No obstante, se implementó un enfoque adicional mediante el método de correlación para evaluar cuánta información se había perdido. Los resultados mostraron una correlación de 0.84, lo que indica una alta similitud entre ambas señales procesadas.
 
 #
 
 ### Referencias
 
-[1] “SEÑALES DE ENCEFALOGRAMA: Análisis y distinción de Canales Focales y No Focales.” Available: https://openaccess.uoc.edu/bitstream/10609/98326/6/atestapeTFM0619memoria.pdf
-
-[2] “Electroencefalografía (EEG) - Mayo Clinic,” Mayoclinic.org, 2022. https://www.mayoclinic.org/es/tests-procedures/eeg/about/pac-20393875 (accessed Sep. 30, 2023).
-
-[3] World, “Epilepsia,” Who.int, Feb. 09, 2023. https://www.who.int/es/news-room/fact-sheets/detail/epilepsy#:~:text=La%20proporci%C3%B3n%20de%20la%20poblaci%C3%B3n,millones%20de%20casos%20de%20epilepsia. (accessed Sep. 30, 2023).
-
-[4] BITalino (r)evolution Lab Guide [Internet]. Available from: https://support.pluxbiosignals.com/wp-content/uploads/2022/04/HomeGuide3_EEG.pdf
 
 [5] Río del, Miguel Ángel Guevara, Marisela Hernández González, María R, Manuel Aguilar Villagrán. EEG correlation during the solving of simple and complex logical–mathematical problems. Cognitive, Affective, & Behavioral Neuroscience [Internet]. 2019 Feb 21 [cited 2023 Oct 1];19(4):1036–46. Available from: https://link.springer.com/article/10.3758/s13415-019-00703-5/tables/1
 
-[6] Ultracortex Mark IV | OpenBCI Documentation [Internet]. Openbci.com. 2022 [cited 2023 Oct 1]. Available from: https://docs.openbci.com/AddOns/Headwear/MarkIV/
-
-[7] Carlos Ernesto Peña Goyas, Mauro Santoyo Mora, José Alfredo Padilla Medina.Metodología para el estudio de señales sinápticas mediante un sistema de EEG portátil.Vol. 42, Núm. 137 (2020). [cited 2023 Oct 1].Available: https://pistaseducativas.celaya.tecnm.mx/index.php/pistas/issue/view/74
-
-[8]Chetan S. Nayak; Arayamparambil C. Anilkumar.EEG Normal.2023. [cited 2023 Oct 1].Available: https://www.ncbi.nlm.nih.gov/books/NBK539805/
 
 
+[1] E. Limonchi,”Diseño de un sistema digital de adquisición programable para la implementación de filtros digitales.” Available: https://repositorio.utp.edu.pe/bitstream/handle/20.500.12867/2751/Williams%20Limonchi_Tesis_Titulo%20ProfesionaL_2020.pdf?sequence=1&isAllowed=y 
 
+[2]   M. De La Rosa, “FUNDAMENTOS TEÓRICOS: FILTROS.” Available: https://biblus.us.es/bibing/proyectos/abreproy/11375/fichero/MEMORIA%252FFundamentos+teoricos.pdf
+
+[3] “Transformada Wavelet – acervo para el mejoramiento del aprendizaje de alumnos de ingeniería, en Inteligencia Artificial,” Unam.mx, 2018. https://virtual.cuautitlan.unam.mx/intar/?page_id=1108 (accessed Oct. 20, 2023).
+
+‌[4] Kumar K, Babak Yazdanpanah, Kumar P. Removal of noise from electrocardiogram using digital FIR and IIR filters with various methods. 2015 Apr 1; Available from: https://ieeexplore-ieee-org.ezproxybib.pucp.edu.pe/document/7322780
+
+[5] Sanjay Kumar Mirania, Mehra R, Gyan Prakash Pal. Reducing computational cost of ECG signal using multirate signal processing. 2015 Oct 1; Available from: https://ieeexplore-ieee-org.ezproxybib.pucp.edu.pe/document/7489537‌
