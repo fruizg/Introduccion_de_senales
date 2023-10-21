@@ -229,3 +229,7 @@ Se visualiza que todos los filtros logran atenuar con creces el ruido que si se 
 ‌[4] Kumar K, Babak Yazdanpanah, Kumar P. Removal of noise from electrocardiogram using digital FIR and IIR filters with various methods. 2015 Apr 1; Available from: https://ieeexplore-ieee-org.ezproxybib.pucp.edu.pe/document/7322780
 
 [5] Sanjay Kumar Mirania, Mehra R, Gyan Prakash Pal. Reducing computational cost of ECG signal using multirate signal processing. 2015 Oct 1; Available from: https://ieeexplore-ieee-org.ezproxybib.pucp.edu.pe/document/7489537‌
+
+[6] N. Pareek, «EEG 101 using OpenBCI Ultracortex», Medium. Accedido: 20 de octubre de 2023. [En línea]. Disponible en: https://towardsdatascience.com/eeg-101-using-openbci-ultracortex-fbeb0202d0c5
+
+[7] D. L, "Introducción a señales biomédicas", Universidad Peruana Cayetano Heredia, 2023-2
