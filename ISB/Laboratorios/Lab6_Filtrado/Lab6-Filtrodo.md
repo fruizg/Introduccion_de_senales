@@ -1,6 +1,6 @@
-# Uso de BITalino y Ultracortex para captura de EEG
+# Filtrado señales
 
-## Laboratorio 5 - Equipo 6
+## Laboratorio 6 - Equipo 6
 
 
 ## Tabla de contenido
