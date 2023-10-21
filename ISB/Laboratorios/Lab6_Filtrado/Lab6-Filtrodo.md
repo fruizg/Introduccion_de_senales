@@ -158,10 +158,49 @@ Para el diseño de wavelet, se utilizaron 4 niveles y una wavelet madre db6.
 ![](img_videos/EMG_respuestaFreq.png)
 
 <p align="center">
- Figura 7: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
+ Figura 10: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
 </p> 
 
-Se visualiza que todos los filtros logran atenuar con creces el ruido que si se visualiza en la señal cruda
+Se visualiza que todos los filtros logran atenuar con creces el ruido que si se visualiza en la señal cruda.
+
+#### Señal ECG
+
+Se presentan a continuación, los resultados obtenidos con la señal ECG.
+![](img_videos/ECG_crudo.png)
+
+<p align="center">
+ Figura 11: Señal ECG cruda
+
+</p> 
+
+Se visualiza una señal ECG de un sujeto en reposo, sin enfermedades cardiacas diagnosticadas. 
+
+#### Filtrado de la señal
+
+![](img_videos/ECG_comparison.png)
+
+<p align="center">
+ Figura 12: Comparación de los resultados de los filtros aplicados
+
+</p> 
+
+
+Para el diseño del filtro IRR, se utilizó un pasabanda entre 1 y 50 Hz de orden 2. Lo anterior de acuerdo a la información recibida en clase [7].
+
+El filtro FIR fue diseñado con una ventana hamming de orden 56. Lo anterior de acuerdo a la información recibida en clase [7]. 
+
+la wavelet fue diseñada a partir de una wavelet db6 de 5 niveles.Lo anterior de acuerdo a la información recibida en clase [7]. 
+
+##### Respuesta en frecuencia
+
+![](img_videos/ECG_respuestaenFreq.png)
+
+<p align="center">
+ Figura 3: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
+</p> 
+
+
+Se visualiza que todos los filtros logran atenuar con creces el ruido que si se visualiza en la señal cruda.
 ### Discusión
 
 - Los resultados del filtrado de ecg no fueron tan buenos comparados con EEG y EMG. Se tendría que aplicar los filtros bajo el desarrollo de las mismas funciones.
