@@ -22,6 +22,8 @@ Control de prótesis y dispositivos médicos: Posibilitan que personas con disca
 Ergonomía y rendimiento deportivo: Las señales EMG son un recurso valioso en la evaluación de la fatiga muscular, la optimización del diseño de equipos y el análisis del rendimiento deportivo. Esto puede ayudar a perfeccionar técnicas, prevenir lesiones y mejorar el desempeño atlético [5].
 Por otro lado, el bloque de características espectrales se encarga de extraer información sobre la frecuencia, potencia y otras propiedades de una señal. Asimismo, es capaz de aplicar filtros de paso bajo y paso alto para eliminar aquellas frecuencias no deseadas. Este proceso resulta especialmente útil para analizar patrones que se repiten en una señal EMG. Por último, en el presente informe, se ejecutó la descomposición discreta de Wavelet, además de la extracción de características y reducción de dimensionalidad. Después de la descomposición, se calcularon algunas características en cada nivel, que podían incluir la entropía, la mediana, la media, la desviación estándar, la varianza y la raíz cuadrada de la media cuadrática (RMS). Estas características proporcionan una visión detallada y útil de la información contenida en la señal para la toma de decisiones [6]. 
 
+#
+
 ### Materiales
 
 | Descripción | Modelo | Cantidad |
@@ -47,6 +49,8 @@ Por otro lado, el bloque de características espectrales se encarga de extraer i
 
 5. Extracción de características:
    - Tras la descomposición, se generaron coeficientes en cada nivel. Con ello, se pudo extraer diversas características, como la energía, la entropía, la media, la desviación estándar, entre otras. Más tarde, para fines del presente trabajo, se enfatizó en la entropía de la señal.
+
+#
 
 ### Resultados
 
@@ -80,6 +84,31 @@ En la figura 3 se logra apreciar no sólo la acción del filtro sino también de
 
 #### Extracción de características
 
+![](img/MuscularBurst.jpg)
+
+<p align="center">
+ Figura 4: Detección de contracciones musculares
+</p>
+
+#### análisis estadístico
+
+- Number of Muscular Activations: 2
+- Maximum Muscular Activation Duration: 0.8332670727797371
+ - Minimum Muscular Activation Duration: 0.7952548893876243
+ - Average Muscular Activation Duration: 0.8142609810836807
+ - Standard Deviation of Muscular Activation Duration: 0.019006091696056382
+ - Maximum Sample Value: 32.73623388284635
+ - Minimum Sample Value: -35.17329652137063
+ - Average Sample Value: 0.00012926668896625452
+ - Standard Deviation Sample Value: 6.440104564094373
+ - RMS: 6.440104565391703
+ - Area: 0.3260373983423782
+ - Total Power Spect: 40.286267198789844
+ - Median Frequency: 101.5625
+ - Maximum Power Frequency: 89.84375
+ - curtosis: 5.221198383861978
+ - oblicuidad: -0.0384668965964368
+ #
 
 ### Discusión 
 
