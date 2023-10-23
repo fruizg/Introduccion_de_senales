@@ -7,7 +7,7 @@
 - Introducción
 - Materiales
 - Métodos
-- Resultados: Gráficas, imágenes y videos
+- Resultados: Gráficas e imágenes   
 - Discusión
 - Referencias
 
@@ -49,6 +49,36 @@ Por otro lado, el bloque de características espectrales se encarga de extraer i
    - Tras la descomposición, se generaron coeficientes en cada nivel. Con ello, se pudo extraer diversas características, como la energía, la entropía, la media, la desviación estándar, entre otras. Más tarde, para fines del presente trabajo, se enfatizó en la entropía de la señal.
 
 ### Resultados
+
+Se presenta una señal sEMG del bicep braquial derecho de un adulto varón, sano, de 20 años de edad, sin lesiones musculares presentes. En ella se visualiza la actividad basal (o en reposo) del mismo y contracciones musculares donde el sujeto hace una contracción del músculo en cuestión, donde una persona externa ejercia una palanca para maximizar el esfuerzo y poder apreciar mejor la contracción.
+
+![](img/EMGyFFT_crudo.png)
+
+<p align="center">
+ Figura 1: Señal EMG sin preprocesamiento y FFT de la misma
+</p> 
+
+Asimismo, se visualiza la respuesta en frecuencia de la señal, teniendo un espectro caracterizado por la presencia de frecuencias en todo su espectro, sobretodo en las altas. 
+
+#### Filtrado
+
+![](img/EMGyFFT_filtrada.png)
+
+<p align="center">
+ Figura 2: Señal EMG después de la aplicación de filtros
+</p>
+
+En la figura 2 se aprecia la señal filtrada y atenuada. Se realizó un filtro IIR pasabandas entre 65-150 Hz de orden 6. Las frecuencias fueron elegidas con base en la literatura consultada en el laboratorio 2, donde se específica que el espectro de las señales EMG oscilan entre 50 y 150 Hz; sin embargo, se decidió la frecuencia de corte baja en 65 Hz para eliminar la frecuencia producida por la alimentación (60 Hz). 
+
+![](img/Comparison_crudoVfiltro.jpg)
+
+<p align="center">
+ Figura 3: Comparación entre la señal cruda y la señal filtrada
+</p>
+
+En la figura 3 se logra apreciar no sólo la acción del filtro sino también del suavizado realizado a la señal.
+
+#### Extracción de características
 
 
 ### Discusión 
