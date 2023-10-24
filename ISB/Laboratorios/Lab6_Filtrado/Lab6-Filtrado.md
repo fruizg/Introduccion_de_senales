@@ -81,7 +81,7 @@ Una vez iniciada la adquisición de señales a través del software OpenSignals,
 
 #### Señal EEG
 Se presentan a continuación, los resultados obtenidos con la señal EEG.
-![](img_videos/SeñalEEG_cruda.png)
+![](graph_Vid/SeñalEEG_cruda.png)
 
 <p align="center">
  Figura 4: Señal EEG cruda
@@ -94,7 +94,7 @@ La señal EEG se ha preprocesado mediante una función que aplica un filtro pasa
 
 ##### Filtrado de señal EEG
 
-![](img_videos/ComparisonEEG.png)
+![](graph_Vid/ComparisonEEG.png)
 
 <p align="center">
  Figura 5: Comparación de los resultados de los filtros aplicados
@@ -108,7 +108,7 @@ Con respecto al filtro FIR, se utilizó la ventana hamming, con un orden de 127.
 
 El diseño de wavelet se realizó con una wavelet madre db4 de 10 niveles por recomemdación del profesor encargado.
 
-![](img_videos/EEG_FiltradoOndas.png)
+![](graph_Vid/EEG_FiltradoOndas.png)
 
 <p align="center">
  Figura 6: Filtrado de las diferentes ondas
@@ -119,7 +119,7 @@ Se aplicó un filtro IRR para el filtrado de las diferentes ondas cerebrales.Se 
 
 ##### respuesta en frecuencia
 
-![](img_videos/FrecuenciasEEG.png)
+![](graph_Vid/FrecuenciasEEG.png)
 
 <p align="center">
  Figura 7: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
@@ -129,7 +129,7 @@ Se Visualiza en la figura que tanto los filtros FIR e IRR logran cortar las frec
 #### Señal EMG
 
 Se presentan a continuación, los resultados obtenidos con la señal EMG.
-![](img_videos/EMG_cruda.png)
+![](graph_Vid/EMG_cruda.png)
 
 <p align="center">
  Figura 8: Señal EMG cruda
@@ -140,7 +140,7 @@ Se visualiza una señal de EMG donde tomada del bicep. Se logra apreciar la dife
 
 ##### Filtrado de señal EMG
 
-![](img_videos/EMG_comparison.png)
+![](graph_Vid/EMG_comparison.png)
 
 <p align="center">
  Figura 9: Comparación de los resultados de los filtros aplicados
@@ -155,7 +155,7 @@ Para el diseño de wavelet, se utilizaron 4 niveles y una wavelet madre db6.
 
 ##### Respuesta en frecuencia 
 
-![](img_videos/EMG_respuestaFreq.png)
+![](graph_Vid/EMG_respuestaFreq.png)
 
 <p align="center">
  Figura 10: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
@@ -166,7 +166,7 @@ Se visualiza que todos los filtros logran atenuar con creces el ruido que si se 
 #### Señal ECG
 
 Se presentan a continuación, los resultados obtenidos con la señal ECG.
-![](img_videos/ECG_crudo.png)
+![](graph_Vid/ECG_crudo.png)
 
 <p align="center">
  Figura 11: Señal ECG cruda
@@ -177,7 +177,7 @@ Se visualiza una señal ECG de un sujeto en reposo, sin enfermedades cardiacas d
 
 #### Filtrado de la señal
 
-![](img_videos/ECG_comparison.png)
+![](graph_Vid/ECG_comparison.png)
 
 <p align="center">
  Figura 12: Comparación de los resultados de los filtros aplicados
@@ -193,7 +193,7 @@ la wavelet fue diseñada a partir de una wavelet db6 de 5 niveles.Lo anterior de
 
 ##### Respuesta en frecuencia
 
-![](img_videos/ECG_respuestaenFreq.png)
+![](graph_Vid/ECG_respuestaenFreq.png)
 
 <p align="center">
  Figura 3: Respuesta en frecuencia de la señal cruda y con cada técnica de filtrado
@@ -214,11 +214,6 @@ Se visualiza que todos los filtros logran atenuar con creces el ruido que si se 
 #
 
 ### Referencias
-
-
-[5] Río del, Miguel Ángel Guevara, Marisela Hernández González, María R, Manuel Aguilar Villagrán. EEG correlation during the solving of simple and complex logical–mathematical problems. Cognitive, Affective, & Behavioral Neuroscience [Internet]. 2019 Feb 21 [cited 2023 Oct 1];19(4):1036–46. Available from: https://link.springer.com/article/10.3758/s13415-019-00703-5/tables/1
-
-
 
 [1] E. Limonchi,”Diseño de un sistema digital de adquisición programable para la implementación de filtros digitales.” Available: https://repositorio.utp.edu.pe/bitstream/handle/20.500.12867/2751/Williams%20Limonchi_Tesis_Titulo%20ProfesionaL_2020.pdf?sequence=1&isAllowed=y 
 
