@@ -74,13 +74,14 @@ Asimismo, se visualiza la respuesta en frecuencia de la señal, teniendo un espe
 
 En la figura 2 se aprecia la señal filtrada y atenuada. Se realizó un filtro IIR pasabandas entre 65-150 Hz de orden 6. Las frecuencias fueron elegidas con base en la literatura consultada en el laboratorio 2, donde se específica que el espectro de las señales EMG oscilan entre 50 y 150 Hz; sin embargo, se decidió la frecuencia de corte baja en 65 Hz para eliminar la frecuencia producida por la alimentación (60 Hz). 
 
+#
 ![](img/Comparison_crudoVfiltro.jpg)
 
 <p align="center">
  Figura 3: Comparación entre la señal cruda y la señal filtrada
 </p>
 
-En la figura 3 se logra apreciar no sólo la acción del filtro sino también del suavizado realizado a la señal.
+En la figura 3 se logra apreciar no sólo la acción del filtro sino también del suavizado realizado a la señal. Se logra apreciar disminución en la amplitud de la señal, la cual se atribuye entonces a las frecuencias altas, y también se nota diferencia en la actividad basal de la señal antes y después del preprocesado.
 
 #### Extracción de características
 
@@ -90,7 +91,7 @@ En la figura 3 se logra apreciar no sólo la acción del filtro sino también de
  Figura 4: Detección de contracciones musculares
 </p>
 
-#### análisis estadístico
+
 
 - Number of Muscular Activations: 2
 - Maximum Muscular Activation Duration: 0.8332670727797371
@@ -113,6 +114,41 @@ En la figura 3 se logra apreciar no sólo la acción del filtro sino también de
 ### Discusión 
 
 
+- El uso de un filtro pasabandas es una herramienta valiosa en el análisis de señales, ya que permite seleccionar y retener un rango específico de frecuencias mientras atenúa las que se encuentran fuera de este intervalo. El orden del filtro, en este caso, un orden 6, desempeña un papel esencial en la precisión y capacidad de selectividad del filtro. Cuanto mayor sea el orden del filtro, mayor será su capacidad para atenuar de manera más pronunciada las frecuencias que se encuentran fuera del rango deseado, en este caso, 65-150 Hz.
+
+- Las pruebas realizadas con un filtro de orden 6 han demostrado una notoria eficacia en la atenuación del ruido y las frecuencias no deseadas en nuestras señales. Esto es particularmente evidente al observar la señal de electromiografía (EMG) después de la filtración. El ruido ha sido reducido significativamente, y las frecuencias que se encuentran fuera del rango de interés, es decir, aquellas que no se sitúan entre 65-150 Hz, han sido atenuadas de manera efectiva. Este proceso de filtrado ha mejorado considerablemente la calidad de la señal y ha resaltado las frecuencias de interés, lo que facilita su posterior análisis y procesamiento.
+
+#### Análisis de los obtenido: 
+
+- Number of Muscular Activations:  El hecho de que haya 2 activaciones musculares sugiere la presencia de dos eventos distintos de activación en el análisis de la señal: Esto podría ser relevante para identificar patrones específicos en la actividad muscular. 
+
+- Maximum Muscular Activation Duration:  el valor de 0.833 segundos indica la duración más larga de una activación muscular. Esto podría ser relevante para determinar la fatiga muscular o la sostenibilidad de la actividad.
+
+- Minimum Muscular Activation Duration: La duración más corta de 0.795 segundos podría representar una activación muscular rápida o intermitente. Esto podría relacionarse con movimientos rápidos o contracciones musculares instantáneas.
+
+- Average Muscular Activation Duration: El promedio de 0.814 segundos proporciona una idea general de la duración típica de las activaciones musculares en la señal.
+
+- Standard Deviation of Muscular Activation Duration: La baja desviación estándar de 0.019 sugiere que las duraciones de las activaciones musculares son consistentes y tienden a agruparse alrededor de la media [7].
+
+- Maximum Sample Value: El valor máximo de 32.74 indica una amplitud máxima en la señal muscular. Esto podría representar momentos de máxima fuerza muscular.
+
+- Minimum Sample Value: El valor mínimo de -35.17 señala la amplitud mínima en la señal, que podría ser una representación de relajación muscular o momentos de baja actividad.
+
+- Average Sample Value: El valor promedio cercano a cero (0.0001) sugiere que la señal se encuentra centrada alrededor de cero, lo que es común en señales eléctricas.
+
+- RMS: El valor RMS de 6.44 podría estar relacionado con la magnitud total de la señal, lo que indica la fuerza general de la actividad muscular.
+
+- Area: El área de 0.326 sugiere la cantidad total de energía en la señal muscular.
+
+- Median Frequency: La frecuencia mediana de 101.56 Hz es importante en el análisis de la señal y podría estar relacionada con la frecuencia dominante de la señal muscular [7].
+
+Estos valores ofrecen información valiosa sobre la señal muscular y pueden ser fundamentales para evaluar y entender la actividad muscular, la fatiga, la fuerza y otros aspectos relacionados con la salud y el rendimiento.
+
+Respecto a la oblicuidad, se puede decir que es una medida que describe la asimetría de la distribución de datos. Un valor negativo de oblicuidad, como la que se obtuvo (-0.0385), indica que la distribución de los datos se inclina hacia la izquierda o tiene una cola más larga en el lado izquierdo del pico principal. Esto significa que hay una tendencia hacia valores más bajos en la distribución, lo que resulta en una asimetría negativa. En otras palabras, la mayoría de los valores se encuentran en el lado derecho del promedio, y hay valores atípicamente bajos en el lado izquierdo. Mientras que la curtosis mide  la forma de la distribución. Un valor de curtosis de 5.2212 indica una curtosis positiva. Una curtosis positiva significa que la distribución tiene colas más pesadas y es más puntiaguda en comparación con una distribución normal estándar. En este caso, los datos tienden a estar más concentrados alrededor de la media y tienen valores extremos más pronunciados (tanto positivos como negativos) en comparación con una distribución normal.
+
+Se puede observar que este tipo de filtro se puede aplicar en el procesamiento de señales EMG. Este se puede configurar cómo es que se quiera obtener de la señal a filtrar y que datos se quiera obtener para un analisis.
+
+
 ### Referencias
 
 [1] Bernabé Rodríguez-Tapia, Soto I, Marinez DM, Norma Candolfi Arballo. Myoelectric Interfaces and Related Applications: Current State of EMG Signal Processing–A Systematic Review. IEEE Access [Internet]. 2020 Jan 1;8:7792–805. Available from: https://ieeexplore.ieee.org/abstract/document/8949764
@@ -127,3 +163,5 @@ En la figura 3 se logra apreciar no sólo la acción del filtro sino también de
 [5] Campanini I, Dißelhorst-Klug C, Rymer WZ, Merletti R. Surface EMG in Clinical Assessment and Neurorehabilitation: Barriers Limiting Its Use. Frontiers in Neurology [Internet]. 2020 Sep 2;11. Available from: https://www.frontiersin.org/articles/10.3389/fneur.2020.00934/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Neurology&id=556522
 
 [6] Spectral features - Edge Impulse Documentation [Internet]. Edgeimpulse.com. 2023 . Available from: https://docs.edgeimpulse.com/docs/edge-impulse-studio/processing-blocks/spectral-features
+
+[7] L. Gila1, A. Malanda, I. Rodríguez Carreño, J. Rodríguez Falces, J. Navallas. Electromyographic signal processing and analysis methods.[Internet]. 2009, Vol. 32. Available from: https://scielo.isciii.es/pdf/asisna/v32s3/original3.pdf.
