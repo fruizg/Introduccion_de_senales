@@ -56,7 +56,7 @@ Por otro lado, el bloque de características espectrales se encarga de extraer i
 
 Se presenta una señal sEMG del bicep braquial derecho de un adulto varón, sano, de 20 años de edad, sin lesiones musculares presentes. En ella se visualiza la actividad basal (o en reposo) del mismo y contracciones musculares donde el sujeto hace una contracción del músculo en cuestión, donde una persona externa ejercia una palanca para maximizar el esfuerzo y poder apreciar mejor la contracción.
 
-![](img/EMGyFFT_crudo.png)
+![](graph/EMGyFFT_crudo.png)
 
 <p align="center">
  Figura 1: Señal EMG sin preprocesamiento y FFT de la misma
@@ -66,7 +66,7 @@ Asimismo, se visualiza la respuesta en frecuencia de la señal, teniendo un espe
 
 #### Filtrado
 
-![](img/EMGyFFT_filtrada.png)
+![](graph/EMGyFFT_filtrada.png)
 
 <p align="center">
  Figura 2: Señal EMG después de la aplicación de filtros
@@ -76,7 +76,7 @@ En la figura 2 se aprecia la señal filtrada y atenuada. Se realizó un filtro I
 
 
 #
-![](img/Comparison_crudoVfiltro.jpg)
+![](graph/Comparison_crudoVfiltro.jpg)
 
 <p align="center">
  Figura 3: Comparación entre la señal cruda y la señal filtrada
@@ -86,7 +86,7 @@ En la figura 3 se logra apreciar no sólo la acción del filtro sino también de
 
 #### Extracción de características
 
-![](img/MuscularBurst.jpg)
+![](graph/MuscularBurst.jpg)
 
 <p align="center">
  Figura 4: Detección de contracciones musculares
