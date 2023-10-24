@@ -74,6 +74,7 @@ Asimismo, se visualiza la respuesta en frecuencia de la señal, teniendo un espe
 
 En la figura 2 se aprecia la señal filtrada y atenuada. Se realizó un filtro IIR pasabandas entre 65-150 Hz de orden 6. Las frecuencias fueron elegidas con base en la literatura consultada en el laboratorio 2, donde se específica que el espectro de las señales EMG oscilan entre 50 y 150 Hz; sin embargo, se decidió la frecuencia de corte baja en 65 Hz para eliminar la frecuencia producida por la alimentación (60 Hz). 
 
+
 #
 ![](img/Comparison_crudoVfiltro.jpg)
 
