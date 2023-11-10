@@ -72,7 +72,7 @@ Asimismo, se visualiza la respuesta en frecuencia de la señal, teniendo un espe
  Figura 2: Señal EMG después de la aplicación de filtros
 </p>
 
-En la figura 2 se aprecia la señal filtrada y atenuada. Se realizó un filtro IIR pasabandas entre 65-150 Hz de orden 6. Las frecuencias fueron elegidas con base en la literatura consultada en el laboratorio 2, donde se específica que el espectro de las señales EMG oscilan entre 50 y 150 Hz; sin embargo, se decidió la frecuencia de corte baja en 65 Hz para eliminar la frecuencia producida por la alimentación (60 Hz). 
+En la figura 2 se aprecia la señal filtrada y atenuada. Se realizó un filtro IIR pasabandas entre 65-150 Hz de orden 6. Las frecuencias fueron elegidas con base en la literatura consultada, se utilizaron frecuencias de corte entre 30 y 350 Hz; Asimismo, para eliminar la frecuencia producida por la alimentación (60 Hz), se utilizó un filtro notch a esa frecuencia [7]. 
 
 
 #
@@ -165,4 +165,6 @@ Se puede observar que este tipo de filtro se puede aplicar en el procesamiento d
 
 [6] Spectral features - Edge Impulse Documentation [Internet]. Edgeimpulse.com. 2023 . Available from: https://docs.edgeimpulse.com/docs/edge-impulse-studio/processing-blocks/spectral-features
 
-[7] L. Gila1, A. Malanda, I. Rodríguez Carreño, J. Rodríguez Falces, J. Navallas. Electromyographic signal processing and analysis methods.[Internet]. 2009, Vol. 32. Available from: https://scielo.isciii.es/pdf/asisna/v32s3/original3.pdf.
+[7] N. T. Mahmood, M. H. Al-Muifraje, T. R. Saeed, y A. H. Kaittan, «Upper Prosthetic Design based on EMG: A Systematic Review», IOP Conf. Ser.: Mater. Sci. Eng., vol. 978, n.o 1, p. 012025, nov. 2020, doi: 10.1088/1757-899X/978/1/012025.
+
+[8] L. Gila1, A. Malanda, I. Rodríguez Carreño, J. Rodríguez Falces, J. Navallas. Electromyographic signal processing and analysis methods.[Internet]. 2009, Vol. 32. Available from: https://scielo.isciii.es/pdf/asisna/v32s3/original3.pdf.
