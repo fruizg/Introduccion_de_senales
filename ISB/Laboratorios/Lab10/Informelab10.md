@@ -52,11 +52,13 @@ La electromiografía (EMG) se centra en la captura, registro y evaluación de la
 #
 
 ### Resultados
-![](ceracteristicas.png)
+
+![](cerateristicas.png)
 
 <p align="center">
  Figura 1: Caracteristicas obtenidas
 </p> 
+
 ![](resultado.png)
 
 <p align="center">
