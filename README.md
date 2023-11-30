@@ -12,8 +12,7 @@
 ## Tabla de contenido
 - [Resumen](#Resumen)
 - [Motivación](#Motivación)
-- [Principales hallazgos](#Principales_hallazgos)
-)
+- [Principales hallazgos](#Principales-hallazgos)
 - [Referencias](#Referencias)
 
 #
