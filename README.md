@@ -15,7 +15,7 @@
 - [Principales hallazgos](#Principales-hallazgos)
 - [Referencias](#Referencias)
 
-#
+
 ## Resumen 
 
 El presente estudio tiene como finalidad evaluar la fatiga muscular de diversos grupos musculares en conductores de auto. Lo anterior con la finalidad de encontrar los grupos musculares que más se fatigan que presentan fátiga después de una conducción prolongada sin descanso. Los resultados podrían ser utilizados por personal de la salud para desarrollar ejercicios específicos para cada área afectada con el objetivo de fortalecer los músculos que allí se encuentran. El estudio utilizará electromiografía de superficie comoo técnica de obtenición de las señales musculares, la cual consiste técnica en la medición de biopotenciles que se basa en la acción eléctrica de los potenciales de acción enviados desde el sistema nervioso hacia los músculos para causar la despolarización de las miofibrillas y así lograr el moviento. El hardware que se utilizará para llevar a cabo lo anterior tiene como nombre BITalino, que corresponde a un producto desarrollado por BioSignals PluX. Se conducirá durante un tiempo y una distancia determinada, y se evaluará la actividad elécttrica de los grupos musculares seleccionados antes y después de la conducción, realizando movimientos específicos y propios de esa acción. Posteriormente se aplicarán técnicas de preprocesado y procesado de señales, entre las cuales se destaca el filtrado y la extracción de características (RMS,MDF), las cuales serán útiles para realizar un análisis estadístico que servirá para determinar si existe o no diferencia entre las señales antes y después de la conducción.
