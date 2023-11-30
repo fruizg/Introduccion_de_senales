@@ -1,6 +1,6 @@
 # Evaluación de sEMG en busqueda de fátiga en grupos musculares específicos de conductores de vehículos durante largos periodos de conducción
 
-#### Assessment of sEMG for the detection of muscle fatigue in specific muscle groups of vehicle drivers during extended periods of driving.
+### Assessment of sEMG for the detection of muscle fatigue in specific muscle groups of vehicle drivers during extended periods of driving.
 
 #
 #### Keywords: sEMG,fatiga muscular.
@@ -10,7 +10,9 @@
 
 # 
 ## Tabla de contenido
-
+- [Resumen]()
+- [Motivación]()
+- Principales Hallazgos()
 
 #
 ## Resumen 
