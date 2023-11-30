@@ -6,7 +6,7 @@
 #### Keywords: sEMG,fatiga muscular, accidentes automovilísticos, análisis de señales.
 
 #
-#### [Sobre nosotros](ISB/Laboratorios/Lab1_AboutUs/README.md)
+## [Sobre nosotros](ISB/Laboratorios/Lab1_AboutUs/README.md)
 
 # 
 ## Tabla de contenido
