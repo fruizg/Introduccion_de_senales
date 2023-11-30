@@ -8,7 +8,7 @@
 #
 ## [Sobre nosotros](ISB/Laboratorios/Lab1_AboutUs/README.md)
 
-# 
+
 ## Tabla de contenido
 - [Resumen](#Resumen)
 - [Motivación](#Motivación)
