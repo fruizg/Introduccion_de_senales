@@ -14,7 +14,7 @@
 
 ## Procedimiento
 
-se intenta mitigar el ruido generado por el movimiento mediante el uso de “case” disenado 
+Se intenta mitigar el ruido generado por el movimiento mediante el uso de “case” disenado 
 en Inventor que se adecua a las dimensiones
 del bitalino con una bater´ıa (112 mm x 63.8 mm x 10.1 mm).
 
