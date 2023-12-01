@@ -3,7 +3,7 @@
 ### Assessment of sEMG for the detection of muscle fatigue in specific muscle groups of vehicle drivers during extended periods of driving.
 
 #
-#### Keywords: sEMG,fatiga muscular, accidentes automovilísticos, análisis de señales.
+#### Keywords: Electromiografía, fatiga muscular , análisis estadístico, movimiento dinámico
 
 #
 ## [Sobre nosotros](ISB/Laboratorios/Lab1_AboutUs/README.md)
@@ -59,4 +59,4 @@ doi:https://doi.org/10.1016/j.trf.2021.03.014
 
 [7] S. Gao, J. Gong, B. Zhang, F. Luo, M. Yerabakan, Y. Pan, y B. Hu, "Use of Advanced Materials and Artificial Intelligence in Electromyography Signal Detection and Interpretation," Advanced Intelligent Systems, vol. 4, p. 2200063, 2022, doi: 10.1002/aisy.202200063.
 
-[8] Defensoria del pueblo, “Defensoría del Pueblo: cifra de accidentes de tránsito en 2022 alcanza niveles registrados antes de la pandemia,” Defensoria del Pueblo - Perú, 2023. https://www.defensoria.gob.pe/defensoria-del-pueblo-cifra-de-accidentes-de-transito-en-2022-alcanza-nivelesregistrados-antes-de-la-pandemia/ (accessed Sep. 01, 2023)
+[8] Defensoria del pueblo, “Defensoría del Pueblo: cifra de accidentes de tránsito en 2022 alcanza niveles registrados antes de la pandemia,” Defensoria del Pueblo - Perú, 2023. https://www.defensoria.gob.pe/defensoria-del-pueblo-cifra-de-accidentes-de-transito-en-2022-alcanza-nivelesregistrados-antes-de-la-pandemia/ (accessed Sep. 01, 2023)
