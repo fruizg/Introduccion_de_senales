@@ -43,8 +43,16 @@ general la ausencia de diferencias estadísticamente significativas entre
 las muestras de los diferentes grupos musculares antes y después de conducir; además también de demarca ausencia de diferencia estadísticamente significativa en las pruebas realizadas a las características extraídas de las señales.
 
 ![TibialAnteriorYErectores](https://github.com/fruizg/Introduccion_de_senales/assets/142452596/4aa03b3a-eece-47a5-a659-f9e1af460373)
+<p align="center">
+ Figura 1: Medianas del tibial anterior derecho y los erectores espinales
+
+</p> 
 
 ![BicepsYcervicales](https://github.com/fruizg/Introduccion_de_senales/assets/142452596/edaa4b9a-9006-4f07-813f-4bd51300b9f3)
+<p align="center">
+ Figura 2: Medianas del biceps derecho y los músculos cervicales
+
+</p> 
 
 ## Referencias
 
