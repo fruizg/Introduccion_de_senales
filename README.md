@@ -42,6 +42,10 @@ las varianzas en algunos casos, las pruebas estadísticas, indican en
 general la ausencia de diferencias estadísticamente significativas entre
 las muestras de los diferentes grupos musculares antes y después de conducir; además también de demarca ausencia de diferencia estadísticamente significativa en las pruebas realizadas a las características extraídas de las señales.
 
+![TibialAnteriorYErectores](https://github.com/fruizg/Introduccion_de_senales/assets/142452596/4aa03b3a-eece-47a5-a659-f9e1af460373)
+
+![BicepsYcervicales](https://github.com/fruizg/Introduccion_de_senales/assets/142452596/edaa4b9a-9006-4f07-813f-4bd51300b9f3)
+
 ## Referencias
 
 [1] Bryan Derrickson Gerard J. Tortora, Principios de Anatomía y Fisiología. Editorial MédicaPanamericana, 2018
